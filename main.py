@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import yt_dlp
 
-TOKEN = "8471320360:AAHriIiS4e4RNxs3AVUvplh1cA1pfI0xcsI"
+TOKEN = 8471320360:AAHrI1iS4e4RNxs3AVUvplh1cA1pfI0XcsI
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("شلونك؟ وياك بوت علي الي ينزل كلشي 🚀\n\nبس مو تنزل سوالف طايح حظها وتنزيلات مو حلوة 🗿🗿💋")
