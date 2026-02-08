@@ -24,7 +24,17 @@ async def download_video(update, context):
     except Exception as e:
         await update.message.reply_text("❌ حدث خطأ! تأكد من أن الرابط صحيح.")
 
+@app.on_message(filters.command("start"))
+async def start(client, message):
+    await message.reply_text("شلونك؟ وياك بوت علي الي ينزل كلشي 🚀\n\nبس مو تنزل سوالف طايح حظها وتنزيلات مو حلوة 🗿🗿💋")
+
 if __name__ == '__main__':
+    print("✅ بوت علي جاهز للعمل!")
+    app = Application.builder().token(TOKEN).build()
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, download_video))
+    app.run_polling()
+    
     print("✅ البوت بدأ العمل بنجاح! جربه الآن في تلجرام.")
     app = Application.builder().token(TOKEN).build()
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, download_video))
