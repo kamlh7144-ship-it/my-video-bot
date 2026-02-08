@@ -7,7 +7,7 @@ TOKEN = "8471320360:AAHrI1iS4e4RNxs3AVUvplh1cA1pfI0XcsI"
 
 async def download_video(update, context):
     url = update.message.text
-    await update.message.reply_text("📥 جاري تحميل الفيديو... انتظر ثواني")
+    await update.message.reply_text("📥 جا يحمل اصبر نتكم خره🙂")
     try:
         ydl_opts = {
             'format': 'best',
