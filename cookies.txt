@@ -1,29 +1,9 @@
-Get cookies.txt for https://www.instagram.com/
-
-Export
-download
-
-Export As
-download
-
-Copy
-content_paste
-
-Export All Cookies
-download
-Export Format:
-
-Netscape
-Table Nowrap:
-
-Domain	Include Subdomains	Path	Secure	Expiry	Name	Value
-.instagram.com	TRUE	/	TRUE	1805285751	csrftoken	Aubp_5VuZB0fk_MpCxrZlj
-.instagram.com	TRUE	/	TRUE	1805284436	datr	VRyLaRGXnALAVjzp-714URIX
+.instagram.com	TRUE	/	TRUE	1805286287	csrftoken	Aubp_5VuZB0fk_MpCxrZlj
+.instagram.com	TRUE	/	TRUE	1805284436	datr	VRyLaRGXnALAVjzp-714URlX
 .instagram.com	TRUE	/	TRUE	1802260436	ig_did	02DDD5F1-F3E9-4F20-8139-4296C5339F87
 .instagram.com	TRUE	/	TRUE	1771329267	dpr	2
 .instagram.com	TRUE	/	TRUE	1805284442	mid	aYscVQABAAEf0dy_cb_g2lgXwcx-
-.instagram.com	TRUE	/	TRUE	1778501751	ds_user_id	59977993187
-.instagram.com	TRUE	/	TRUE	1802260467	sessionid	59977993187%3AQPW8B2KGn1TApL%3A20%3AAYhCw3ftDtw9CPHlFlOC4QP8QHbODXFIByHyFbcm0w
-.instagram.com	TRUE	/	TRUE	1771330550	wd	360x616
-.instagram.com	TRUE	/	TRUE	0	rur	"ODN\05459977993187\0541802261751:01fe0c30e6320507891c0f446c5d0921da380ff90ea026111fc0d20e853eed0d57831cb3"
-Buy Developer a Coffee ☕
+.instagram.com	TRUE	/	TRUE	1778502287	ds_user_id	59977993187
+.instagram.com	TRUE	/	TRUE	1802260467	sessionid	59977993187%3AQPW8B2KGn1TApL%3AAAYHcw3ftDtw9CPHlFlOC4QP8QHbODXFlByHyFbcm0w
+.instagram.com	TRUE	/	TRUE	1771331082	wd	360x616
+.instagram.com	TRUE	/	TRUE	0	rur	"ODN\05459977993187\0541802262287:01fe7573c0eb240a9e5d2c62c5227b940d05a22efb5f269ea92d91950f08bb3a29eba467"
