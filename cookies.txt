@@ -1,4 +1,4 @@
-.instagram.com	TRUE	/	TRUE	1805286287	csrftoken	Aubp_5VuZB0fk_MpCxrZlj
+..instagram.com	TRUE	/	TRUE	1805286287	csrftoken	Aubp_5VuZB0fk_MpCxrZlj
 .instagram.com	TRUE	/	TRUE	1805284436	datr	VRyLaRGXnALAVjzp-714URlX
 .instagram.com	TRUE	/	TRUE	1802260436	ig_did	02DDD5F1-F3E9-4F20-8139-4296C5339F87
 .instagram.com	TRUE	/	TRUE	1771329267	dpr	2
